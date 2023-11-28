@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카테고리/서브카테고리 추가 폼</title>
+    <style>
+        /* 전체 페이지 스타일 설정 */
+        body {
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 페이지 헤더 스타일 설정 */
+        header {
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        /* 페이지 섹션 스타일 설정 */
+        section {
+            margin: 20px;
+            display: flex;
+            justify-content: center; /* 중앙 정렬 */
+            gap: 200px; /* 요소들 사이의 간격 조절 */
+        }
+
+        /* 폼 스타일 설정 */
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 10px;
+        }
+
+        /* 라벨 스타일 설정 */
+        label {
+            margin-bottom: 5px;
+        }
+
+        /* 입력 필드 스타일 설정 */
+        input {
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* 버튼 스타일 설정 */
+        input[type="submit"] {
+            background-color: gray;
+            color: white;
+            padding: 8px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+
+    <section>
+        <!-- 카테고리 추가 -->
+        <div>
+            <h2>카테고리 추가</h2>
+            <form action="category_add.php" method="POST">
+                <label for="name">이름:</label>
+                <input type="text" name="name" required>
+                <input type="submit" value="추가">
+            </form>
+        </div>
+
+        <!-- 서브카테고리 추가 -->
+        <div>
+            <h2>서브카테고리 추가</h2>
+            <form action="subcategory_add.php" method="POST">
+                <label for="name">이름:</label>
+                <input type="text" name="name" required>
+
+                <label for="price">가격:</label>
+                <input type="number" name="price" required>
+
+                <label for="category_id">상위카테고리ID:</label>
+                <input type="number" name="category_id" required>
+
+                <input type="submit" value="추가">
+            </form>
+        </div>
+    </section>
+</body>
+</html>

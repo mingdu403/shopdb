@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang='ko'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/578df5cd94.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+
+        <title>온라인스토어</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+
+                <h1><a href="main_user.html"><button>홈으로 가기</button></a></h1> <!-- 로고 (클릭시 메인화면)-->
+
+                <div class="search">
+                    <input type="search" class="searchbar">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>  <!-- 검색창 -->
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="./login.html" type="_blank"><button><i class="fa-solid fa-user"></i><br>로그인</button></a>
+                        </li>
+                        <li>
+                            <a href="./login.html" type="_blank" onclick="alert('로그인을 먼저 진행해 주세요.')"><button><i class="fa-solid fa-house"></i><br>마이페이지</button></a>
+                        </li>
+
+                        <li>
+                            <a href="./login.html" type="_blank" onclick="alert('로그인을 먼저 진행해 주세요.')"><button><i class="fa-solid fa-basket-shopping"></i><br>장바구니</button></a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>  
+        </header>
+
+        <main>
+            <div class="left">
+                <ul>
+                    <li><a href="#" onclick="kitchen();">주방·생활용품</li>
+                    <li><a href="#" onclick="living();">가구·인테리어</a></li>
+                    <li><a href="#" onclick="stationary();">문구</a></li>
+                    <li><a href="#" onclick="beauty();">화장품</a></li>
+                    <li><a href="#" onclick="women();">여성복</a></li>
+                    <li><a href="#" onclick="men();">남성복</a></li>
+                    <li><a href="#" onclick="innerwear();">이너웨어</a></li>
+                    <li><a href="#" onclick="accesories();">악세서리</a></li>
+                    <li><a href="#" onclick="food();">과자·음료</a></li>
+                    <li><a href="#" onclick="sauces();">요리 소스</a></li>
+                </ul>
+            </div>
+            
+            <div class="right">
+
+                <div class="items">
+                    
+                    <div class="sales">
+                    <h3>총 <span>5개</span>의 상품이 있습니다.</h3>
+
+                        <div class="nonsale">
+                            <input type="checkbox"><h5>품절상품제외</h5>
+                        </div>
+
+                    </div>
+                    
+                    <ul>
+                        <li>
+                            <div class="itemimg"><img id="img1" src=""></div>
+                            <span id="span1"></span><button>장바구니 담기</button>
+                        </li>
+                        <li>
+                            <div class="itemimg"><img id="img2" src=""></div>
+                            <span id="span2"></span><button>장바구니 담기</button>
+                        </li>
+                        <li>
+                            <div class="itemimg"><img id="img3" src=""></div>
+                            <span id="span3"></span><button>장바구니 담기</button>
+                        </li>
+                        <li>
+                            <div class="itemimg"><img id="img4" src=""></div>
+                            <span id="span4"></span><button>장바구니 담기</button>
+                        </li>
+                        <li>
+                            <div class="itemimg"><img id="img5" src=""></div>
+                            <span id="span5"></span><button>장바구니 담기</button>
+                        </li>
+                    </ul>
+
+                </div>  
+            </div>
+        </main>  
+
+    </body>
+    <script src="script.ts"></script>
+</html>
